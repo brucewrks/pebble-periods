@@ -30,13 +30,15 @@ rocky.on('draw', function(event) {
   ctx.fillStyle = 'white';
   ctx.textAlign = 'center';
   ctx.font      = '28px bold Gothic';
-  ctx.fillText(current.hours.toString() + ':' + current.minutes.toString(), cx, 25, (w - 20));
+
+  var minutesString = current.minutes.toString();
+  if(current.minutes < 10) minutesString = '0' + minutesString;
+  if(current.hours > 12) current.hours -= 12;
+  ctx.fillText(current.hours.toString() + ':' + minutesString, cx, 25, (w - 20));
 
   ctx.font      = '18px Gothic';
   ctx.fillText(dayOfWeek(current.weekday) + ' ' + month(current.month) + ' ' + current.day, cx, 55, (w - 20));
   ctx.fillText(current.task, cx, 95, (w - 20));
-
-  console.log(schedule[0].name);
 });
 
 // Convers hours + minutes into minutes in a day
@@ -44,7 +46,9 @@ var convertToMinutes = function(hour, minute) {
   var minutes = 0;
 
   minutes = hour * 60;
-  minutes = minutes + minute;
+  minutes += minute;
+
+  return minutes;
 };
 
 // Converts minute integer to Hours String
@@ -54,6 +58,9 @@ var convertToHours = function(minute) {
     var hours = (minute / 60);
     if(hours === 1) return '1 hour';
     else return hours.toString() + ' hours';
+  } else if(minute < 60) {
+    if(minute === 1) return '1 min';
+    else return minute.toString() + ' min(s)';
   }
 
   var hours = Math.round(minute / 60);
@@ -70,8 +77,8 @@ var convertToHours = function(minute) {
   }
 };
 
-var dayOfWeek = function(int) {
-  var weekday = new Array(7);
+function dayOfWeek(int) {
+  var weekday = [];
   weekday[0] =  "Sun";
   weekday[1] = "Mon";
   weekday[2] = "Tue";
@@ -81,24 +88,24 @@ var dayOfWeek = function(int) {
   weekday[6] = "Sat";
 
   return weekday[int];
-};
+}
 
-var month = function(int) {
-  var month = new Array();
-  month[0] = "Jan";
-  month[1] = "Feb";
-  month[2] = "Mar";
-  month[3] = "Apr";
-  month[4] = "May";
-  month[5] = "Jun";
-  month[6] = "Jul";
-  month[7] = "Aug";
-  month[8] = "Sep";
-  month[9] = "Oct";
-  month[10] = "Nov";
-  month[11] = "Dec";
+function month(int) {
+  var m = [];
+  m[0] = "Jan";
+  m[1] = "Feb";
+  m[2] = "Mar";
+  m[3] = "Apr";
+  m[4] = "May";
+  m[5] = "Jun";
+  m[6] = "Jul";
+  m[7] = "Aug";
+  m[8] = "Sep";
+  m[9] = "Oct";
+  m[10] = "Nov";
+  m[11] = "Dec";
 
-  return month[int];
+  return m[int];
 }
 
 rocky.on('minutechange', function(event) {
@@ -124,10 +131,10 @@ rocky.on('minutechange', function(event) {
 
     if(startMinutes > 0 && startMinutes < smallestMinutes) { // Event match is a start of period
       smallestMinutes = startMinutes;
-      theEvent = ev.start.name + ' begins in ' + convertToHours(startMinutes);
+      theEvent = ev.name + ' begins in ' + convertToHours(startMinutes);
     } else if(endMinutes > 0 && endMinutes < smallestMinutes) { // Event match is an end of period
       smallestMinutes = endMinutes;
-      theEvent = ev.start.name + ' ends in ' + convertToHours(endMinutes);
+      theEvent = ev.name + ' ends in ' + convertToHours(endMinutes);
     }
   });
 
