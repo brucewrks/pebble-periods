@@ -94,5 +94,17 @@
       "hour": 15,
       "minute": 30
     }
+  },
+  {
+    "name": "Test Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 22,
+      "minute": 15
+    },
+    "end": {
+      "hour": 23,
+      "minute": 30
+    }
   }
 ]
