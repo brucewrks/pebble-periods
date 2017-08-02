@@ -96,15 +96,15 @@
     }
   },
   {
-    "name": "Test Period",
+    "name": "Send Nudes",
     "on_weekend": false,
     "start": {
-      "hour": 22,
-      "minute": 15
+      "hour": 1,
+      "minute": 0
     },
     "end": {
-      "hour": 23,
-      "minute": 30
+      "hour": 1,
+      "minute": 15
     }
   }
 ]
