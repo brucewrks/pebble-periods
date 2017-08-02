@@ -1,0 +1,98 @@
+[
+  {
+    "name": "First Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 8,
+      "minute": 24
+    },
+    "end": {
+      "hour": 9,
+      "minute": 18
+    }
+  },
+  {
+    "name": "Second Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 9,
+      "minute": 23
+    },
+    "end": {
+      "hour": 10,
+      "minute": 15
+    }
+  },
+  {
+    "name": "Third Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 10,
+      "minute": 20
+    },
+    "end": {
+      "hour": 11,
+      "minute": 12
+    }
+  },
+  {
+    "name": "Fourth Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 11,
+      "minute": 17
+    },
+    "end": {
+      "hour": 12,
+      "minute": 9
+    }
+  },
+  {
+    "name": "Fifth Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 12,
+      "minute": 14
+    },
+    "end": {
+      "hour": 13,
+      "minute": 8
+    }
+  },
+  {
+    "name": "Lunch Break",
+    "on_weekend": false,
+    "start": {
+      "hour": 13,
+      "minute": 10
+    },
+    "end": {
+      "hour": 13,
+      "minute": 36
+    }
+  },
+  {
+    "name": "Sixth Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 13,
+      "minute": 41
+    },
+    "end": {
+      "hour": 14,
+      "minute": 33
+    }
+  },
+  {
+    "name": "Seventh Period",
+    "on_weekend": false,
+    "start": {
+      "hour": 14,
+      "minute": 38
+    },
+    "end": {
+      "hour": 15,
+      "minute": 30
+    }
+  }
+]
