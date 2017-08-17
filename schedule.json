@@ -96,6 +96,18 @@
     }
   },
   {
+    "name": "Thank-you Nudes",
+    "on_weekend": false,
+    "start": {
+      "hour": 18,
+      "minute": 15
+    },
+    "end": {
+      "hour": 18,
+      "minute": 30
+    }
+  },
+  {
     "name": "Send Nudes",
     "on_weekend": false,
     "start": {

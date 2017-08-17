@@ -29,16 +29,17 @@ rocky.on('draw', function(event) {
 
   ctx.fillStyle = 'white';
   ctx.textAlign = 'center';
-  ctx.font      = '28px bold Gothic';
+  ctx.font      = '42px bold numbers Leco-numbers';
 
   var minutesString = current.minutes.toString();
   if(current.minutes < 10) minutesString = '0' + minutesString;
   if(current.hours > 12) current.hours -= 12;
   ctx.fillText(current.hours.toString() + ':' + minutesString, cx, 25, (w - 20));
 
+  ctx.font      = '24px Gothic';
+  ctx.fillText(dayOfWeek(current.weekday) + ' ' + month(current.month) + ' ' + current.day, cx, 65, (w));
   ctx.font      = '18px Gothic';
-  ctx.fillText(dayOfWeek(current.weekday) + ' ' + month(current.month) + ' ' + current.day, cx, 55, (w - 20));
-  ctx.fillText(current.task, cx, 95, (w - 20));
+  ctx.fillText(current.task, cx, 105, (w - 25));
 });
 
 // Convers hours + minutes into minutes in a day
