@@ -99,12 +99,12 @@
     "name": "Send Nudes",
     "on_weekend": false,
     "start": {
-      "hour": 1,
+      "hour": 4,
       "minute": 0
     },
     "end": {
-      "hour": 1,
-      "minute": 15
+      "hour": 5,
+      "minute": 30
     }
   }
 ]
