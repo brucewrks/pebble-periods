@@ -1,109 +1,109 @@
 [
   {
-    "name": "First Period",
+    "name": "Homeroom",
     "on_weekend": false,
     "start": {
       "hour": 8,
-      "minute": 24
+      "minute": 50
     },
     "end": {
       "hour": 9,
-      "minute": 18
-    }
-  },
-  {
-    "name": "Second Period",
-    "on_weekend": false,
-    "start": {
-      "hour": 9,
-      "minute": 23
-    },
-    "end": {
-      "hour": 10,
-      "minute": 15
-    }
-  },
-  {
-    "name": "Third Period",
-    "on_weekend": false,
-    "start": {
-      "hour": 10,
       "minute": 20
+    }
+  },
+  {
+    "name": "ELT / Adv",
+    "on_weekend": false,
+    "start": {
+      "hour": 9,
+      "minute": 25
+    },
+    "end": {
+      "hour": 10,
+      "minute": 0
+    }
+  },
+  {
+    "name": "1st Academic",
+    "on_weekend": false,
+    "start": {
+      "hour": 10,
+      "minute": 4
     },
     "end": {
       "hour": 11,
+      "minute": 4
+    }
+  },
+  {
+    "name": "2nd Academic",
+    "on_weekend": false,
+    "start": {
+      "hour": 11,
+      "minute": 8
+    },
+    "end": {
+      "hour": 12,
+      "minute": 8
+    }
+  },
+  {
+    "name": "3rd Academic",
+    "on_weekend": false,
+    "start": {
+      "hour": 12,
       "minute": 12
-    }
-  },
-  {
-    "name": "Fourth Period",
-    "on_weekend": false,
-    "start": {
-      "hour": 11,
-      "minute": 17
-    },
-    "end": {
-      "hour": 12,
-      "minute": 9
-    }
-  },
-  {
-    "name": "Fifth Period",
-    "on_weekend": false,
-    "start": {
-      "hour": 12,
-      "minute": 14
     },
     "end": {
       "hour": 13,
-      "minute": 10
+      "minute": 34
     }
   },
   {
-    "name": "Lunch Break",
+    "name": "Lunch",
     "on_weekend": false,
     "start": {
-      "hour": 13,
-      "minute": 10
+      "hour": 12,
+      "minute": 28
     },
     "end": {
+      "hour": 12,
+      "minute": 48
+    }
+  },
+  {
+    "name": "4th Academic",
+    "on_weekend": false,
+    "start": {
       "hour": 13,
       "minute": 36
-    }
-  },
-  {
-    "name": "Sixth Period",
-    "on_weekend": false,
-    "start": {
-      "hour": 13,
-      "minute": 41
     },
     "end": {
       "hour": 14,
-      "minute": 33
+      "minute": 38
     }
   },
   {
-    "name": "Seventh Period",
+    "name": "Planning",
     "on_weekend": false,
     "start": {
       "hour": 14,
-      "minute": 38
+      "minute": 40
     },
     "end": {
       "hour": 15,
-      "minute": 30
+      "minute": 55
     }
   },
   {
     "name": "Send Nudes",
     "on_weekend": false,
     "start": {
-      "hour": 4,
+      "hour": 2,
       "minute": 0
     },
     "end": {
-      "hour": 5,
+      "hour": 6,
       "minute": 30
     }
   }
