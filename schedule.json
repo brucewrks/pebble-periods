@@ -55,8 +55,8 @@
       "minute": 12
     },
     "end": {
-      "hour": 13,
-      "minute": 34
+      "hour": 12,
+      "minute": 28
     }
   },
   {
@@ -69,6 +69,18 @@
     "end": {
       "hour": 12,
       "minute": 48
+    }
+  },
+  {
+    "name": "3rd Cont",
+    "on_weekend": false,
+    "start": {
+      "hour": 12,
+      "minute": 48
+    },
+    "end": {
+      "hour": 13,
+      "minute": 34
     }
   },
   {
@@ -93,18 +105,6 @@
     "end": {
       "hour": 15,
       "minute": 55
-    }
-  },
-  {
-    "name": "Send Nudes",
-    "on_weekend": false,
-    "start": {
-      "hour": 2,
-      "minute": 0
-    },
-    "end": {
-      "hour": 6,
-      "minute": 30
     }
   }
 ]
